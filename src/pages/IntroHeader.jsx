@@ -71,15 +71,15 @@ const IconWrapper = styled.div`
 `;
 
 const IconImg = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0 10px 0 0;
 `;
 
 const HeaderLogoBox = styled.span`
   padding: 4px 10px 0px 5px;
   color: rgb(64, 122, 87);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
 `;
 

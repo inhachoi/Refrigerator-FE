@@ -38,7 +38,7 @@ const PartComment = styled.div`
 const MainComment = styled.div`
   margin: 15px 0;
   color: rgb(255, 200, 0);
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
 `;
@@ -46,7 +46,7 @@ const MainComment = styled.div`
 const SubComment = styled.div`
   margin: 20px 0;
   color: rgb(101, 81, 1);
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 `;
 

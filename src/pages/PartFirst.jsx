@@ -22,7 +22,7 @@ const PartLayout = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-width: 1300px;
+  min-width: 1100px;
   height: 100vh;
   font-size: 60px;
   font-weight: bold;
@@ -53,18 +53,18 @@ const fadeInAnimation = keyframes`
 `;
 
 const AnimatedImgFirst = styled.img`
-  width: 300px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   border-radius: 20px;
   opacity: 0; // 초기에 투명하게 설정
   animation: ${fadeInAnimation} 1.5s ease 0s forwards; // 0.3초 지연된 시작
 `;
 
 const AnimatedImgSecond = styled.img`
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   margin: 10px;
   border-radius: 20px;
@@ -73,8 +73,8 @@ const AnimatedImgSecond = styled.img`
 `;
 
 const AnimatedImgThird = styled.img`
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   margin: 10px;
   border-radius: 20px;
@@ -83,8 +83,8 @@ const AnimatedImgThird = styled.img`
 `;
 
 const AnimatedImgFourth = styled.img`
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   margin: 10px;
   border-radius: 20px;
@@ -93,8 +93,8 @@ const AnimatedImgFourth = styled.img`
 `;
 
 const AnimatedImgFifth = styled.img`
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   margin: 10px;
   border-radius: 20px;
