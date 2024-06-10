@@ -24,7 +24,7 @@ const PartLayout = styled.div`
   text-align: center;
   min-width: 1100px;
   height: 100vh;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
 `;
 

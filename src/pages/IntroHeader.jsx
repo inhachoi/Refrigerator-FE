@@ -1,24 +1,11 @@
-import { useState } from "react";
-import LoginSignupModal from "./LoginSignupModal.jsx";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 function IntroHeader() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(true);
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const navigate = useNavigate();
 
-  const handleLogin = () => {
-    setIsLogin(true);
-    openModal();
-  };
-  const handleSignup = () => {
-    setIsLogin(false);
-    openModal();
+  const navigateToDashboard = () => {
+    navigate("/dashboard");
   };
 
   return (
@@ -31,17 +18,10 @@ function IntroHeader() {
           <HeaderLogoBox>냉장고를 부탁해! </HeaderLogoBox>
         </HeaderLeft>
         <div>
-          <button onClick={handleLogin}>로그인</button>
-          <button onClick={handleSignup}>가입하기</button>
+          <button onClick={navigateToDashboard}>로그인</button>
+          <button onClick={navigateToDashboard}>가입하기</button>
         </div>
       </IntroHeaderLayout>
-      {isModalOpen && (
-        <LoginSignupModal
-          closeModal={closeModal}
-          isLogin={isLogin}
-          setIsLogin={setIsLogin}
-        />
-      )}
     </HeaderContainer>
   );
 }
