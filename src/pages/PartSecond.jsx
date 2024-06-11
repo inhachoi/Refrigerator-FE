@@ -23,7 +23,7 @@ const PartLayout = styled.div`
 
 const PartImg = styled.img`
   width: 50%;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover;
 `;
 
@@ -33,6 +33,7 @@ const PartComment = styled.div`
   align-items: center;
   justify-content: center;
   width: 50%;
+  padding: 50px;
 `;
 
 const MainComment = styled.div`
@@ -44,7 +45,7 @@ const MainComment = styled.div`
 `;
 
 const SubComment = styled.div`
-  margin: 20px 0;
+  margin: 20px;
   color: rgb(101, 81, 1);
   font-size: 20px;
   text-align: center;
