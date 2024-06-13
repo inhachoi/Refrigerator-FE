@@ -10,7 +10,8 @@ function PartSecond() {
           💰&nbsp;전기요금&nbsp; <FaArrowDown />
         </MainComment>
         <SubComment>
-          적재량이 60%일때 전력⚡효율이 가장 좋습니다!
+          적재량이 60%일때 ⚡전력효율이 가장 좋습니다.
+          60%로 맞추면 아낄 수 있는 전기요금을 확인해보세요!
         </SubComment>
       </PartComment>
     </PartLayout>

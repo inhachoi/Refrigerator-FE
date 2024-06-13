@@ -1,14 +1,20 @@
 import styled from "styled-components";
 import { FaArrowDown } from "react-icons/fa6";
+import { PiTreeBold } from "react-icons/pi";
+import { TbBrandCarbon } from "react-icons/tb";
 
 function PartThird() {
   return (
     <PartLayout>
       <PartComment>
-        <MainComment>탄소 배출&nbsp; <FaArrowDown /></MainComment>
+        <MainComment>
+          <TbBrandCarbon />
+          &nbsp;탄소 배출&nbsp; <FaArrowDown />
+        </MainComment>
         <SubComment>
-          유통기한 임박한 음식물 처리를 통해, 폐기에 발생하는 탄소 배출량을
-          줄여줍니다! 🍃
+          유통기한이 임박한 음식을 먹으면, 음식물 쓰레기 처리 과정에서 생기는
+          탄소 배출을 막을 수 있어요. 아낀 탄소 배출량을, 나무가
+          <PiTreeBold /> 휴식할 수 있는 일수로 보여줘요.
         </SubComment>
       </PartComment>
       <PartImg src="../../eco4.webp" alt="" />
