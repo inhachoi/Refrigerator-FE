@@ -16,7 +16,7 @@ const IntroHeader = () => {
     event.preventDefault();
     const action = event.nativeEvent.submitter.value;
     try {
-      if (action === "회원가입") {
+      if (action === "Join") {
         if (data.password.length < 6) {
           alert("PW는 6글자 이상이어야 합니다.");
           return;
@@ -28,7 +28,7 @@ const IntroHeader = () => {
         );
         console.log("회원가입 정보", createdUser);
         alert("회원가입 완료.");
-      } else if (action === "로그인") {
+      } else if (action === "Login") {
         const loggedInUser = await signInWithEmailAndPassword(
           auth,
           data.email,
