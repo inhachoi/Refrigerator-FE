@@ -46,6 +46,7 @@ const PartComment = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
+    height: 22vh;
     padding: 0px;
   }
 `;
