@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { FaArrowDown } from "react-icons/fa6";
 
 function PartThird() {
   return (
     <PartLayout>
       <PartComment>
-        <MainComment>탄소 배출량 감소.</MainComment>
+        <MainComment>탄소 배출&nbsp; <FaArrowDown /></MainComment>
         <SubComment>
           유통기한 임박한 음식물 처리를 통해, 폐기에 발생하는 탄소 배출량을
-          줄여줍니다!
+          줄여줍니다! 🍃
         </SubComment>
       </PartComment>
       <PartImg src="../../eco4.webp" alt="" />
@@ -27,12 +28,11 @@ const PartLayout = styled.div`
 
 const PartImg = styled.img`
   width: 50%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 
   @media (max-width: 900px) {
     width: 100%;
-    height: 100%;
     height: 50vh;
   }
 `;
@@ -54,6 +54,8 @@ const PartComment = styled.div`
 `;
 
 const MainComment = styled.div`
+  display: flex;
+  align-items: center;
   margin: 10px 0;
   color: rgb(64, 122, 87);
   font-size: 40px;

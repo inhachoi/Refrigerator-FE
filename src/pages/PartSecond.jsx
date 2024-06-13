@@ -1,13 +1,16 @@
 import styled from "styled-components";
+import { FaArrowDown } from "react-icons/fa6";
 
 function PartSecond() {
   return (
     <PartLayout>
       <PartImg src="../../eco7.webp" alt="" />
       <PartComment>
-        <MainComment>전력 사용량 감소</MainComment>
+        <MainComment>
+          💰&nbsp;전기요금&nbsp; <FaArrowDown />
+        </MainComment>
         <SubComment>
-          냉장고 적재량이 60%일때 전력효율이 가장 좋습니다!
+          적재량이 60%일때 전력⚡효율이 가장 좋습니다!
         </SubComment>
       </PartComment>
     </PartLayout>
@@ -46,12 +49,14 @@ const PartComment = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     padding: 0px;
   }
 `;
 
 const MainComment = styled.div`
+  display: flex;
+  align-items: center;
   margin: 15px 0;
   color: rgb(255, 200, 0);
   font-size: 40px;
