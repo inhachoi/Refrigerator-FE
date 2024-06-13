@@ -93,6 +93,8 @@ const InputBox = styled.input`
 
   @media (max-width: 900px) {
     width: 100%;
+    padding: 10px 5px;
+    font-size: 12px;
   }
 `;
 
