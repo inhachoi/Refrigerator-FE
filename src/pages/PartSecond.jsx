@@ -19,12 +19,21 @@ const PartLayout = styled.div`
   display: flex;
   height: 100vh;
   background-color: rgb(255, 251, 224);
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 const PartImg = styled.img`
   width: 50%;
   height: 90vh;
   object-fit: cover;
+
+  @media (max-width: 900px) {
+    width: 95%;
+    height: 60vh;
+  }
 `;
 
 const PartComment = styled.div`
@@ -34,6 +43,11 @@ const PartComment = styled.div`
   justify-content: center;
   width: 50%;
   padding: 50px;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 0px;
+  }
 `;
 
 const MainComment = styled.div`
@@ -42,6 +56,10 @@ const MainComment = styled.div`
   font-size: 40px;
   font-weight: bold;
   text-align: center;
+
+  @media (max-width: 900px) {
+    font-size: 25px;
+  }
 `;
 
 const SubComment = styled.div`
@@ -49,6 +67,11 @@ const SubComment = styled.div`
   color: rgb(101, 81, 1);
   font-size: 20px;
   text-align: center;
+
+  @media (max-width: 900px) {
+    font-size: 15px;
+    margin: 10px 60px;
+  }
 `;
 
 export default PartSecond;

@@ -71,8 +71,8 @@ const IntroHeader = () => {
             id="password"
             placeholder="PW"
           />
-          <ButtonBox type="submit" value="로그인" />
-          <ButtonBox type="submit" value="회원가입" />
+          <ButtonBox type="submit" value="Login" />
+          <ButtonBox type="submit" value="Join" />
         </HeaderRight>
       </IntroHeaderLayout>
     </HeaderContainer>
@@ -90,6 +90,10 @@ const InputBox = styled.input`
   text-align: center;
   font-weight: bold;
   cursor: pointer;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const ButtonBox = styled.input`
@@ -99,6 +103,8 @@ const ButtonBox = styled.input`
   border: none;
   border-radius: 10px;
   background-color: #ffd900e6;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
 `;
 
@@ -119,7 +125,6 @@ const IntroHeaderLayout = styled.div`
 
 const HeaderLeft = styled.div`
   display: flex;
-  min-width: 230px;
   padding: 10px 0 10px 20px;
 `;
 
@@ -144,6 +149,10 @@ const HeaderLogoBox = styled.span`
   color: rgb(64, 122, 87);
   font-size: 22px;
   font-weight: 600;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export default IntroHeader;
