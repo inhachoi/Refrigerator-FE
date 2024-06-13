@@ -31,8 +31,8 @@ const PartImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 900px) {
-    width: 95%;
-    height: 60vh;
+    width: 100%;
+    height: 50vh;
   }
 `;
 
@@ -46,7 +46,7 @@ const PartComment = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
-    height: 22vh;
+    height: 35vh;
     padding: 0px;
   }
 `;
