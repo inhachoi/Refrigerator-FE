@@ -81,7 +81,7 @@ const AnimatedImgFirst = styled.img`
   width: 250px;
   height: 300px;
   object-fit: cover;
-  margin: 10px 10px 10px 0;
+  margin: 10px;
   border-radius: 20px;
   opacity: 0; // 초기에 투명하게 설정
   animation: ${fadeInAnimation} 1.5s ease 0s forwards; // 0.3초 지연된 시작
@@ -154,22 +154,23 @@ const AnimatedImgFifth = styled.img`
 
 const bounceAnimation = keyframes`
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translate(-50%, -20px);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 `;
-
 const BounceArrow = styled.div`
+  display: flex;
+  justify-content: center;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   bottom: 20px;
-  font-size: 50px;
+  font-size: 40px;
   animation: ${bounceAnimation} 2s infinite;
 `;
 
