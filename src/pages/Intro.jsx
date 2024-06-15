@@ -8,7 +8,6 @@ function Intro() {
   const PAGE_COUNT = 5;
   const outerDivRef = useRef();
 
-  // eslint-disable-next-line consistent-return
   useEffect(() => {
     const wheelHandler = (e) => {
       e.preventDefault();
@@ -69,7 +68,7 @@ const IntroLayout = styled.div`
   overflow-y: auto;
   height: 100vh;
 
-  /* 화면에서 스크롤바 안보이게 */
+  // 화면에서 스크롤바 안보이게
   &::-webkit-scrollbar {
     display: none;
   }

@@ -23,6 +23,7 @@ function PartThird() {
 }
 
 const PartLayout = styled.div`
+  position: relative;
   display: flex;
   height: 100vh;
   background-color: #eef9e2;

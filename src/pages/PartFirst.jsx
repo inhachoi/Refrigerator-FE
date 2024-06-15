@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { IoIosArrowDown } from "react-icons/io";
 
 function PartFirst() {
   return (
@@ -27,6 +28,9 @@ function PartFirst() {
           alt="사진5"
         />
       </ImgsPart>
+      <BounceArrow>
+        <IoIosArrowDown />
+      </BounceArrow>
     </PartLayout>
   );
 }
@@ -146,6 +150,27 @@ const AnimatedImgFifth = styled.img`
     width: 100px;
     height: 150px;
   }
+`;
+
+const bounceAnimation = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+`;
+
+const BounceArrow = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  font-size: 50px;
+  animation: ${bounceAnimation} 2s infinite;
 `;
 
 export default PartFirst;
