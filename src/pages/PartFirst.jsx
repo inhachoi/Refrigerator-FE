@@ -8,23 +8,23 @@ function PartFirst() {
       <SubComment>친환경 스마트 냉장고</SubComment>
       <ImgsPart>
         <AnimatedImgFirst
-          src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+          src="../../food1.jpeg"
           alt="사진1"
         />
         <AnimatedImgSecond
-          src="https://healingfactory.co.kr/data/files/dee27b6e7d998faa5dbeb3e36762c28d.jpg"
+          src="../../food2.jpg"
           alt="사진2"
         />
         <AnimatedImgThird
-          src="https://d2m9duoqjhyhsq.cloudfront.net/marketingContents/article/article872-01.jpg"
+          src="../../food3.jpg"
           alt="사진3"
         />
         <AnimatedImgFourth
-          src="https://sitem.ssgcdn.com/94/93/86/item/1000020869394_i1_1100.jpg"
+          src="../../food4.avif"
           alt="사진4"
         />
         <AnimatedImgFifth
-          src="https://www.foodbank.co.kr/news/photo/202201/62407_19908_1226.jpg"
+          src="../../food5.jpg"
           alt="사진5"
         />
       </ImgsPart>
@@ -135,6 +135,10 @@ const AnimatedImgFourth = styled.img`
     width: 100px;
     height: 150px;
   }
+
+  @media (max-width: 359px) {
+    display: none;
+  }
 `;
 
 const AnimatedImgFifth = styled.img`
@@ -163,6 +167,7 @@ const bounceAnimation = keyframes`
     transform: translate(-50%, -10px);
   }
 `;
+
 const BounceArrow = styled.div`
   display: flex;
   justify-content: center;

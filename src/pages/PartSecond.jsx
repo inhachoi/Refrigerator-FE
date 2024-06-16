@@ -15,9 +15,6 @@ function PartSecond() {
           전기요금을 확인해보세요!
         </SubComment>
       </PartComment>
-      <BounceArrow>
-        <IoIosArrowDown />
-      </BounceArrow>
     </PartLayout>
   );
 }
@@ -83,29 +80,6 @@ const SubComment = styled.div`
     font-size: 15px;
     margin: 10px 60px;
   }
-`;
-
-const bounceAnimation = keyframes`
-  0%, 20%, 50%, 80%, 100% {
-    transform: translate(-50%, 0);
-  }
-  40% {
-    transform: translate(-50%, -20px);
-  }
-  60% {
-    transform: translate(-50%, -10px);
-  }
-`;
-
-const BounceArrow = styled.div`
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 100px;
-  font-size: 40px;
-  animation: ${bounceAnimation} 2s infinite; 
 `;
 
 export default PartSecond;
