@@ -12,7 +12,7 @@ function PartFirst() {
           alt="사진1"
         />
         <AnimatedImgSecond
-          src="../../food2.jpg"
+          src="../../food2.jpeg"
           alt="사진2"
         />
         <AnimatedImgThird
